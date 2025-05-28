@@ -1,0 +1,14 @@
+int distanceBetweenBusStops(int* distance, int distanceSize, int start, int destination){
+    int clockwise_distance = 0;
+    int counterclockwise_distance = 0;
+    int i = start;
+
+    if (start == destination)
+     return 0;
+
+    if (clockwise_distance < counterclockwise_distance) {
+        return clockwise_distance;
+    } else {
+        return counterclockwise_distance;
+    }
+}
